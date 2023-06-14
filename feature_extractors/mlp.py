@@ -4,7 +4,8 @@ class Linear_Layer(torch.nn.Module):
     def __init__(self, in_nodes, out_nodes):
         super(Linear_Layer, self).__init__()
         self.fc = torch.nn.Linear(in_nodes, out_nodes)
-        self.af = torch.nn.ReLU()
+        torch.nn.init.xavier_normal_(self.fc.weight)
+        self.af = torch.nn.Tanh()
 
     def forward(self,x):
         return self.af(self.fc(x))
