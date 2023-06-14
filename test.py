@@ -3,7 +3,6 @@ from policies.Deep_Q_Learning import dql
 from feature_extractors import mlp
 import torch
 from memory import experience_replay
-import utility
 from exploration import e_greedy
 
 #Define your environment
