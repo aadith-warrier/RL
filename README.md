@@ -11,6 +11,6 @@ This directory contains modular blocks from popular neural network architectures
 
 ### Algorithms
 This directory has all the RL algorithms. 
-- [Deep Q-Learning](policies/Deep_Q_Learning/DQN.md)
+- [Deep Q-Learning](policies/Deep_Q_Learning/)
 
 Other algorithms (VPG, TRPO, PPO) will be added shortly!
