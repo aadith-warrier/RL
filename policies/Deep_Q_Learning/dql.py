@@ -94,6 +94,7 @@ class DQNAgent():
                         
                 steps_done += 1
                 c_reward += reward
+                state = next_state
             try:
                 print("Episode: ", e, "Episode reward:", c_reward, "Loss:", loss.item())
             except:
